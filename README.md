@@ -88,7 +88,7 @@ Lo cuál nos genera un archivo <b>ejecutable</b>. Si tuviéramos más archivos <
 
 ## Paso 5:
 
-Corremos:
+Corremos con:
 
 ```
 ./holaFortran
