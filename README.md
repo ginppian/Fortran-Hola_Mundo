@@ -47,6 +47,56 @@ PROGRAM HOLA
 END
 ```
 
+## Paso 3:
+
+```
+gfortran -c hola.f90
+```
+<p align="justify">
+	Esto nos genera un archivo <b>hola.o</b> que es un <b>archivo objeto</b> <i>¿Qué significa?</i>
+</p>
+
+<p align="justify">
+	La compilación se divide en varias partes: dos de ellas son la compilación (código objeto) y el enlazado (código máquina).
+
+Imagínate que tienes un gran proyecto que tardase en compilar 20 minutos. Si cada vez que tienes que cambiar una línea de código ocupas 20 minutos es desgastante.
+
+Lo que se hace, es dividir el proyecto en varios sub-archivos. Cada sub-archivo se compila de forma autonóma, después se unén los archivos compilados <i>(linker)</i> y se forma el programa completo.
+
+De este modo que si cambias una línea de código solo tendrías que compilar ese fichero.
+</p>
+
+## Paso 4:
+
+<p align="justify">
+	Como ya dijimos anteriormente la compilación total se divide a varios sub-archivos que después hay que <b>ligarlos</b>.
+
+Para ligar los archivos con extensión <b>.o</b> bastara seguir este <i>modelo</i>:
+</p>
+
+```
+gfortran -o executableName object1.o object2.o ...
+```
+
+En nuestro caso, haremos:
+
+```
+gfortran -o holaFortran hola.o
+```
+
+Lo cuál nos genera un archivo <b>ejecutable</b>. Si tuviéramos más archivos <i>objeto</i> bastaría con seguir el modelo.
+
+## Paso 5:
+
+Corremos:
+
+```
+./holaFortran
+```
+
+<p align="center">
+  <img src="https://github.com/ginppian/Learning-Laravel-Sqlite/blob/master/imgs/img1.png" width="486" height="368" />
+</p>
 ## Contacto
 
 Twitter: @ginppian
