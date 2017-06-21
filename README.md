@@ -84,7 +84,7 @@ En nuestro caso, haremos:
 gfortran -o holaFortran hola.o
 ```
 
-Lo cuál nos genera un archivo <b>ejecutable</b>. Si tuviéramos más archivos <i>objeto</i> bastaría con seguir el modelo de arriba.
+Lo cuál nos genera un archivo <b>ejecutable</b>. Si tuviéramos más archivos <i>objeto</i> bastaría con seguir el <i>modelo</i> de arriba.
 
 ## Paso 5:
 
